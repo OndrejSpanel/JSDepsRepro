@@ -11,3 +11,5 @@ githubTokenSource := TokenSource.GitConfig("github.token")
 resolvers += Resolver.githubPackages("OpenGrabeso", "packages")
 
 libraryDependencies += "com.github.opengrabeso" %%% "threejs-facade" % "0.0.114-0.0.4"
+
+jsDependencies += ProvidedJS / "three.js" minified "three.min.js" commonJSName "THREE"
